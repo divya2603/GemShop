@@ -1,0 +1,18 @@
+<html ng-app='store'>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    </head>
+    <title></title>
+    <body>
+    <script type = "text/javascript" src = "angular.min.js"></script>
+     <script type = "text/javascript" src = "app.js"></script>
+     <!--ng-controller allows us to attach our controller to this elem-->
+     <!--as value: controller name as:keyword store:alias-->
+     <div ng-controller='StoreController as store'>
+        <h1>{{store.product.name}}</h1>
+        <h2>{{store.product.price}}</h2>
+        <p>{{store.product.description}}</p>
+    </div>
+<!--We dont have access to StoreController here-->
+    </body>
+</html>
